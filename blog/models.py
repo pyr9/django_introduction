@@ -7,3 +7,5 @@ class Article(models.Model):
     title = models.TextField()
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now=True)
+    def __str__(self):
+        return self.title
